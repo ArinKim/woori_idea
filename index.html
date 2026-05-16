@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woori WON Banking Mockup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="web-background">
+        <!-- Info Panel (Left) -->
+        <div class="info-panel">
+            <h1>Woori WON Banking</h1>
+            <p>신규 금융상품 계약 프로세스 목업</p>
+            
+            <div class="controls">
+                <button onclick="resetApp()">초기화</button>
+            </div>
+
+            <!-- Simulation Triggers (External) -->
+            <div id="simulation-panel" class="simulation-controls">
+                <p style="font-size:12px; color:var(--woori-cyan); margin-bottom:10px; font-weight:700;">시뮬레이션 트리거</p>
+                <button class="btn-trigger" onclick="simulateUserQuestion()">
+                    <span>사용자 음성 질문</span>
+                    "집합투자증권이 뭐야?"
+                </button>
+                <button class="btn-trigger" onclick="simulateUserAgentRequest()">
+                    <span>상담사 연결 요청</span>
+                    "상담원 연결이 필요해"
+                </button>
+            </div>
+        </div>
+
+        <!-- Galaxy Device Frame (Center) -->
+        <div class="device-container">
+            <div class="device-frame">
+                <!-- Session Label (Border aware) -->
+                <div class="ai-status-label">🔵 AI 실시간 안내 중</div>
+                
+                <!-- Internal Icons (In-frame) -->
+                <div class="ai-icon-internal"></div>
+                <div class="agent-icon-internal">🎧</div>
+                
+                <div class="status-bar">
+                    <span class="time">20:53</span>
+                    <div class="icons">
+                        <span class="battery">88%</span>
+                    </div>
+                </div>
+                
+                <div id="app-content">
+                    <!-- Screens injected here -->
+                </div>
+
+                <div class="home-indicator"></div>
+            </div>
+
+            <!-- External Voice Containers (To the right of the phone) -->
+            <div id="external-voice" class="external-voice-container" style="display:none;">
+                <div id="ai-bubble-container"></div>
+            </div>
+
+            <div id="user-voice" class="user-voice-container" style="display:none;">
+                <div id="user-bubble-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
