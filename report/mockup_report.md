@@ -43,9 +43,9 @@
 *모든 안내와 확인을 거쳐 안전하게 가입이 완료된 화면입니다.*
 
 ## 4. 시연 영상 (Full Demo)
-전체 가입 프로세스를 담은 녹화 영상입니다. (WebP 포맷)
+전체 가입 프로세스를 담은 녹화 영상입니다.
 
-![Full Demo](./full_mockup_final_demo_1778934271215.webp)
+<video src="./mockup_recording.mov" controls width="100%" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></video>
 
 ## 5. 시연 조작 방법 (트리거 사용법)
 1. **AI 활성화**: '예, AI 안내를 받겠습니다' 클릭.
